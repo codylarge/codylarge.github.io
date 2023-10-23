@@ -1,17 +1,16 @@
 /* Palletes */
 /*
-#DC4F4C #FA9838 #F8EA74 #B1E73E #06D1B6
-#B87A89 #2F3D4B #245F86 #2A87C0 #7DB9D5
+#DC4F4C #FA9838 #F8EA74 #B1E73E #06D1B6 -- High contrast primary colors
+#B87A89 #2F3D4B #245F86 #2A87C0 #7DB9D5 -- pink and blue
 */
 
 
 body {
     font-family: 'Kanit', sans-serif;
-    background-color: #245F86;
+    background-color: #2F3D4B;
 }
 
 h1 {
-    text-align: center;
     color: #c58393;
     font-size: 5em;
     /* border: 2px dotted gray; */
@@ -19,24 +18,24 @@ h1 {
 }
 
 p {
-    text-align: center;
     font-size: 1.5em;
-    color: #7DB9D5;
     /* border: 2px dotted gray; */
     margin: 0px;
 }
 
 #navbar {
-    background-color: #333;
+    background-color: #1f2730;
     color: #fff;
     display: flex;
     overflow: hidden;
     justify-content: space-between;
     align-items: center;
+    border: 2px solid black; 
     padding: 10px;
 }
 
 #navbar a {
+    border-radius: 25px;
     display: block;
     color: #fff;
     padding: 1% 10%;
@@ -44,7 +43,8 @@ p {
 }
 
 #navbar a:hover {
-    background-color: #555;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 1);
+    background-color: #2A87C0;
 }
 
 #logo {
@@ -56,10 +56,11 @@ p {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    border: 2px dotted black;
 }
 
-#left-block {
+#left-block {    
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     width: 50%;
     padding: 10px;
     border: 2px dotted gray;
@@ -72,7 +73,7 @@ p {
 }
 
 .importantText {
-    color: #7DB9D5;
+    color: #2A87C0;
     font-size: 2em;
     /* border: 2px dotted gray; */
 }
