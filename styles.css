@@ -7,14 +7,24 @@
 
 body {
     font-family: 'Kanit', sans-serif;
-    background-color: #2F3D4B;
+    background-image: url('./img/backgroundv2.1.jpg');
+    background-position: center; 
+    background-size: cover; 
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 }
 
 h1 {
-    color: #c58393;
+    color: #da86a9;
     font-size: 5em;
     /* border: 2px dotted gray; */
     margin: 0px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 p {
@@ -23,18 +33,18 @@ p {
     margin: 0px;
 }
 
-#navbar {
-    background-color: #1f2730;
+nav {
+    background-color: #1f2730C1;
     color: #fff;
     display: flex;
     overflow: hidden;
     justify-content: space-between;
     align-items: center;
     border: 2px solid black; 
-    padding: 10px;
+    padding: 5px;
 }
 
-#navbar a {
+nav a {
     border-radius: 25px;
     display: block;
     color: #fff;
@@ -44,7 +54,7 @@ p {
 
 #navbar a:hover {
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 1);
-    background-color: #2A87C0;
+    background-color: #2A87C05F;
 }
 
 #logo {
@@ -52,37 +62,46 @@ p {
     padding: 10px;
 }
 
-#main {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
 #left-block {    
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     width: 50%;
     padding: 10px;
-    border: 2px dotted gray;
 }
 
 #infoText {
-    border: 2px dotted gray;
+    display: block;
+    margin-top: 15%;
+    margin-left: 30%;
+    width: 60%;
+ /* border: 2px dotted gray; */
 }
 
 .basicText {
-    color: #dbdbdb;
+    font-weight: 300;
+    color: #fff;
     font-size: 1.5em;
     /* border: 2px dotted gray; */
 }
 
 .importantText {
-    color: #2A87C0;
+    color: #009dff;
     font-size: 2em;
     /* border: 2px dotted gray; */
 }
 
 #right-block {
     width: 50%;
-    border: 2px dotted gray;
+    /*border: 2px dotted gray; */
+}
+
+@media (max-width: 1400px) {
+    #infoText {
+        display: block;
+        margin-left: 0%;
+        width: 100%;
+        border: 2px dotted gray;
+    }
+
+    
 }
