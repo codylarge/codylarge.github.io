@@ -41,7 +41,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     border: 2px solid black; 
-    padding: 5px;
 }
 
 nav a {
@@ -58,9 +57,9 @@ nav a {
 }
 
 #logo {
+    padding-left: 1%;
     float: left;
-    padding: 10px;
-    margin-right: 25%;
+    margin-right: 15%;
 }
 
 #left-block {    
@@ -101,7 +100,6 @@ nav a {
         display: block;
         margin-left: 0%;
         width: 100%;
-        border: 2px dotted gray;
     }
 
     main {
