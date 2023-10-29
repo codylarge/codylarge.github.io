@@ -23,12 +23,6 @@ main {
     padding-top: 30px;
 }
 
-#logo {
-    padding-left: .5%;
-    padding-top: .5%;
-    float: left;
-    margin-right: 15%;
-}
 
 .clickable-image {
     width: 75%; /* Default width */

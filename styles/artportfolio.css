@@ -13,24 +13,52 @@ h2 {
 }
 
 .gallery {
+    align-items: center; 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    max-width: 85%; /* Set a maximum width for the gallery */
+    margin: 0 auto; /* Center the gallery on larger screens */
+    padding: 20px; /* Add some padding to the gallery */
 }
 
 .item {
-    width: 25%; /* Adjust width as needed */
-    margin: 3%; /* Adjust margin to reduce space between items */
+    width: 20%; /* Display 4 items per row; adjust as necessary */
+    margin: 2%; /* Adjust margin */
     text-align: center;
+    box-sizing: border-box; /* Ensure border width is included in width */
+}
+
+.item:hover {
+    transform: scale(1.1);
 }
 
 .item img {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .85);
 }
 
 .item h3 {
     margin-top: 5px;
     font-size: 18px;
+}
+
+
+@media (max-width: 1200px) {
+    .gallery {
+        justify-content: center; 
+    }
+
+    .item {
+        width: 45%;
+        padding: 2%;
+    }
+}
+@media (max-width: 800px) {
+    .item {
+        width: 75%;
+        padding: 2%;
+    }
 }

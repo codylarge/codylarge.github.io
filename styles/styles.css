@@ -32,12 +32,6 @@ p {
     margin: 0px;
 }
 
-#logo {
-    padding-left: .5%;
-    padding-top: .5%;
-    float: left;
-    margin-right: 15%;
-}
 #left-block {    
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
