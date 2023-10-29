@@ -1,0 +1,36 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    background-image: url('../img/backgroundfinalv2.jpg');
+    background-position: center;
+    background-size: cover; 
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+h2 {
+    color: #da86a9;
+    margin: 0px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    width: 25%; /* Adjust width as needed */
+    margin: 3%; /* Adjust margin to reduce space between items */
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.item h3 {
+    margin-top: 5px;
+    font-size: 18px;
+}
