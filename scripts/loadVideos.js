@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       src: "../img/cs/TTWebapp.mp4",
       title: "Toontown Calculator",
-      link: "https://github.com/codylarge/Toontown-Webapp",
+      link: "https://codylarge.github.io/Toontown-Webapp/",
     },
     // Add more video data objects as needed
   ];
