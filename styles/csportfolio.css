@@ -4,7 +4,6 @@ body {
     background-position: center;
     background-size: cover;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-    margin: 0; /* Reset default margin */
 }
 
 #videoContainer {
@@ -24,16 +23,15 @@ video {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-width: 85%; /* Set a maximum width for the gallery */
-    margin: 0 auto; /* Center the gallery on larger screens */
-    padding: 20px; /* Add some padding to the gallery */
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 20px; 
 }
 
 .item {
-    width: 40%; /* Display 4 items per row; adjust as necessary */
-    margin: 2%; /* Adjust margin */
+    margin: 2%; 
     text-align: center;
-    box-sizing: border-box; /* Ensure border width is included in width */
+    box-sizing: border-box; 
 }
 
 .item:hover {
@@ -42,9 +40,8 @@ video {
 
 .item img {
     width: 100%;
-    height: auto;
     border-radius: 5px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, .85);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
 }
 
 .item h2 {
@@ -52,7 +49,7 @@ video {
     color: #da86a9;
     font-weight: 400;
     text-decoration: underline;
-    font-size: 4em;
+    font-size: 3em;
     /* border: 2px dotted gray; */
     margin: 0px;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);

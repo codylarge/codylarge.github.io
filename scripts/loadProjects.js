@@ -119,10 +119,31 @@ document.addEventListener("DOMContentLoaded", function () {
   const imageDataCS = [
     {
       //TTR site
-      src: "../img/cs/ttr-ss.png",
+      src: "../img/cs/ttr-site.webp",
       alt: "Toontown Web app",
       title: "Toontown Web App",
       link: "https://github.com/codylarge/Toontown-Webapp",
+    },
+    {
+      //Music site
+      src: "../img/cs/song-site.webp",
+      alt: "Music Player",
+      title: "JW Music Player",
+      link: "https://github.com/codylarge/MusicPlayer",
+    },
+    {
+      //Space Blog
+      src: "../img/cs/space-blog.webp",
+      alt: "Space Blog",
+      title: "My Space Blog",
+      link: "https://github.com/codylarge/astro-space-blog",
+    },
+    {
+      //Super Smash Sisters
+      src: "../img/cs/super-smash.webp",
+      alt: "Super Smash Sisters",
+      title: "Super Smash Sisters",
+      link: "https://github.com/codylarge/Mega-Smash-Sisters",
     },
   ];
   // Figure out which portfolio page we're on
