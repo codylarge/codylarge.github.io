@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // TODO: Make them all jpgs
-  const imageData = [
+  const imageData3D = [
     {
       //Mordecai Arcade
       src: "../img/art/arcade-mordecai.webp",
@@ -116,9 +116,17 @@ document.addEventListener("DOMContentLoaded", function () {
     // Add more image data objects as needed
   ];
 
-  const imageContainer = document.getElementById("imageContainer");
+  const imageDataCS = [];
+  // Figure out which portfolio page we're on
+  const isCsPortfolioPage = window.location.href.includes("csportfolio.html");
 
-  imageData.forEach((image) => {
+  const imageContainer = document.getElementById("imageContainer");
+  let data = imageData3D;
+  if (isCsPortfolioPage) {
+    data = imageDataCS;
+  }
+  console.log(isCsPortfolioPage);
+  data.forEach((image) => {
     const div = document.createElement("div");
     div.classList.add("item");
 
