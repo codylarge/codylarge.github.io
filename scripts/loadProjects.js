@@ -116,7 +116,15 @@ document.addEventListener("DOMContentLoaded", function () {
     // Add more image data objects as needed
   ];
 
-  const imageDataCS = [];
+  const imageDataCS = [
+    {
+      //TTR site
+      src: "../img/cs/ttr-ss.png",
+      alt: "Toontown Web app",
+      title: "Toontown Web App",
+      link: "https://github.com/codylarge/Toontown-Webapp",
+    },
+  ];
   // Figure out which portfolio page we're on
   const isCsPortfolioPage = window.location.href.includes("csportfolio.html");
 
@@ -125,6 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (isCsPortfolioPage) {
     data = imageDataCS;
   }
+
   console.log(isCsPortfolioPage);
   data.forEach((image) => {
     const div = document.createElement("div");

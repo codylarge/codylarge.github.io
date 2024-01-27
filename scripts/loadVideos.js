@@ -6,11 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Mega Smash Sisters",
       link: "https://github.com/codylarge/Mega-Smash-Sisters",
     },
-    {
-      src: "../img/cs/TTWebapp.mp4",
-      title: "Toontown Calculator",
-      link: "https://codylarge.github.io/Toontown-Webapp/",
-    },
     // Add more video data objects as needed
   ];
 

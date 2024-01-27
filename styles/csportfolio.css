@@ -7,30 +7,6 @@ body {
     margin: 0; /* Reset default margin */
 }
 
-h2 {
-    padding-bottom: 1%;;
-    color: #da86a9;
-    font-weight: 400;
-    text-decoration: underline;
-    font-size: 4em;
-    /* border: 2px dotted gray; */
-    margin: 0px;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
-}
-
-h2:hover{
-    color: #cfa1b3;
-}
-
-h2:active {
-    color: #ce3d77;
-}
-
-a {
-    text-decoration: none; /* Removes the underline */
-}
-
-
 #videoContainer {
     display: flex;
     flex-direction: column;
@@ -43,7 +19,61 @@ video {
     border-radius: 5px;
 }
 
+.gallery {
+    align-items: center; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 85%; /* Set a maximum width for the gallery */
+    margin: 0 auto; /* Center the gallery on larger screens */
+    padding: 20px; /* Add some padding to the gallery */
+}
+
 .item {
-    padding: 2%;
-    margin-bottom: 20px; /* Adds space between videos */
+    width: 40%; /* Display 4 items per row; adjust as necessary */
+    margin: 2%; /* Adjust margin */
+    text-align: center;
+    box-sizing: border-box; /* Ensure border width is included in width */
+}
+
+.item:hover {
+    transform: scale(1.1);
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .85);
+}
+
+.item h2 {
+    padding-bottom: 1%;;
+    color: #da86a9;
+    font-weight: 400;
+    text-decoration: underline;
+    font-size: 4em;
+    /* border: 2px dotted gray; */
+    margin: 0px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+    text-decoration: none; 
+}
+
+
+
+@media (max-width: 1200px) {
+    .gallery {
+        justify-content: center; 
+    }
+
+    .item {
+        width: 45%;
+        padding: 2%;
+    }
+}
+@media (max-width: 800px) {
+    .item {
+        width: 75%;
+        padding: 2%;
+    }
 }
