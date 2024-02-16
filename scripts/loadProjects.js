@@ -118,6 +118,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const imageDataCS = [
     {
+      src: null,
+      alt: null,
+      title: "Web apps",
+      link: null,
+    },
+    {
       //TTR site
       src: "../img/cs/ttr-site.webp",
       alt: "Toontown Web app",
@@ -139,6 +145,39 @@ document.addEventListener("DOMContentLoaded", function () {
       link: "https://github.com/codylarge/astro-space-blog",
     },
     {
+      src: null,
+      alt: null,
+      title: "Modeling/Simulation",
+      link: null,
+    },
+    {
+      //Newton Gravity Simulation
+      src: "../img/cs/newton-simulation.webp",
+      alt: "Newton Gravity Simulator",
+      title: "Newton Gravity Simulator",
+      link: "https://github.com/codylarge/newton-gravity-simulator",
+    },
+    {
+      //Traffic Simulation
+      src: "../img/cs/traffic-simulation.webp",
+      alt: "Traffic Light Simulation",
+      title: "Traffic Light Simulation",
+      link: "https://github.com/codylarge/traffic-light-simulation",
+    },
+    {
+      //Traffic Simulation
+      src: "../img/cs/artillery-simulation.webp",
+      alt: "Artillery Simulation",
+      title: "Artillery Simulation",
+      link: "https://github.com/codylarge/artillery-simulation",
+    },
+    {
+      src: null,
+      alt: null,
+      title: "Games",
+      link: null,
+    },
+    {
       //Super Smash Sisters
       src: "../img/cs/super-smash.webp",
       alt: "Super Smash Sisters",
@@ -155,24 +194,30 @@ document.addEventListener("DOMContentLoaded", function () {
     data = imageDataCS;
   }
 
-  console.log(isCsPortfolioPage);
   data.forEach((image) => {
     const div = document.createElement("div");
-    div.classList.add("item");
 
-    const link = document.createElement("a");
-    link.href = image.link; // Set the link
+    if (image.src === null) {
+      const title = document.createElement("h1");
+      title.textContent = image.title;
+      div.appendChild(title);
+      div.classList.add("section");
+    } else {
+      div.classList.add("item");
+      const link = document.createElement("a");
+      link.href = image.link;
 
-    const img = document.createElement("img");
-    img.src = image.src;
-    img.alt = image.alt;
+      const img = document.createElement("img");
+      img.src = image.src;
+      img.alt = image.alt;
 
-    const title = document.createElement("h2");
-    title.textContent = image.title;
+      const title = document.createElement("h2");
+      title.textContent = image.title;
 
-    link.appendChild(img); // Append the image to the anchor element
-    div.appendChild(link); // Append the anchor to the container
-    div.appendChild(title);
+      link.appendChild(img);
+      div.appendChild(link);
+      div.appendChild(title);
+    }
     imageContainer.appendChild(div);
   });
 });
