@@ -124,6 +124,20 @@ document.addEventListener("DOMContentLoaded", function () {
       link: null,
     },
     {
+      // Health Connect
+      src: "../img/cs/healthconnect.webp",
+      alt: "Health Connect",
+      title: "Health Connect",
+      link: "https://github.com/codylarge/HealthConnect",
+    },
+    {
+      // Farmsense
+      src: "../img/cs/farmsense.webp",
+      alt: "Farm sense",
+      title: "FarmSense",
+      link: "https://github.com/codylarge/FarmSense",
+    },
+    {
       //TTR site
       src: "../img/cs/ttr-site.webp",
       alt: "Toontown Web app",
@@ -131,45 +145,11 @@ document.addEventListener("DOMContentLoaded", function () {
       link: "https://github.com/codylarge/Toontown-Webapp",
     },
     {
-      //Music site
-      src: "../img/cs/song-site.webp",
-      alt: "Music Player",
-      title: "JW Music Player",
-      link: "https://github.com/codylarge/MusicPlayer",
-    },
-    {
       //Space Blog
       src: "../img/cs/space-blog.webp",
       alt: "Space Blog",
-      title: "My Space Blog",
+      title: "Space Blog",
       link: "https://github.com/codylarge/astro-space-blog",
-    },
-    {
-      src: null,
-      alt: null,
-      title: "Modeling/Simulation",
-      link: null,
-    },
-    {
-      //Newton Gravity Simulation
-      src: "../img/cs/newton-simulation.webp",
-      alt: "Newton Gravity Simulator",
-      title: "Newton Gravity Simulator",
-      link: "https://github.com/codylarge/newton-gravity-simulator",
-    },
-    {
-      //Traffic Simulation
-      src: "../img/cs/traffic-simulation.webp",
-      alt: "Traffic Light Simulation",
-      title: "Traffic Light Simulation",
-      link: "https://github.com/codylarge/traffic-light-simulation",
-    },
-    {
-      //Traffic Simulation
-      src: "../img/cs/artillery-simulation.webp",
-      alt: "Artillery Simulation",
-      title: "Artillery Simulation",
-      link: "https://github.com/codylarge/artillery-simulation",
     },
     {
       src: null,
@@ -214,9 +194,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const title = document.createElement("h2");
       title.textContent = image.title;
 
+      div.appendChild(title);
       link.appendChild(img);
       div.appendChild(link);
-      div.appendChild(title);
     }
     imageContainer.appendChild(div);
   });
