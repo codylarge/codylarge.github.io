@@ -1,6 +1,6 @@
 body {
     font-family: 'Kanit', sans-serif;
-    background-image: url('../img/backgroundfinalv2.jpg');
+    background-image: url('../img/backgroundfullstars.webp');
     background-position: center;
     background-size: cover;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
@@ -37,11 +37,19 @@ h1 {
 }
 
 .item {
-    margin: 2%; 
-    text-align: center;
-    box-sizing: border-box; 
-    padding-bottom: 1%;
+  margin: 2%;
+  text-align: center;
+  box-sizing: border-box;
+  padding-bottom: 1%;
 }
+
+.item img {
+  max-width: 100%;
+  min-width: 200px; /* prevents image from getting smaller than 200px */
+  height: auto;
+  display: inline-block;
+}
+
 
 .item:hover {
     transform: scale(1.1);

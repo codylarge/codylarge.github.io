@@ -138,6 +138,13 @@ document.addEventListener("DOMContentLoaded", function () {
       link: "https://github.com/codylarge/FarmSense",
     },
     {
+      // Denoiser3000
+      src: "../img/cs/denoiser.webp",
+      alt: "Denoiser 3000",
+      title: "Denoiser3000",
+      link: "https://github.com/codylarge/Denoiser3000",
+    },
+    {
       //TTR site
       src: "../img/cs/ttr-site.webp",
       alt: "Toontown Web app",
