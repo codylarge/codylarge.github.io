@@ -131,18 +131,11 @@ document.addEventListener("DOMContentLoaded", function () {
       link: "https://github.com/codylarge/HealthConnect",
     },
     {
-      // Farmsense
-      src: "../img/cs/farmsense.webp",
-      alt: "Farm sense",
-      title: "FarmSense",
-      link: "https://github.com/codylarge/FarmSense",
-    },
-    {
-      // Denoiser3000
-      src: "../img/cs/denoiser.webp",
-      alt: "Denoiser 3000",
-      title: "Denoiser3000",
-      link: "https://github.com/codylarge/Denoiser3000",
+      //Casino 
+      src: "../img/cs/casino.webp",
+      alt: "Casino webapp",
+      title: "Bankrupt Speedrun",
+      link: "https://github.com/codylarge/casino-webapp",
     },
     {
       //TTR site
@@ -157,6 +150,26 @@ document.addEventListener("DOMContentLoaded", function () {
       alt: "Space Blog",
       title: "Space Blog",
       link: "https://github.com/codylarge/astro-space-blog",
+    },
+    {
+      src: null,
+      alt: null,
+      title: "ML/AI",
+      link: null,
+    },
+    {
+      // Farmsense
+      src: "../img/cs/farmsense.webp",
+      alt: "Farm sense",
+      title: "FarmSense",
+      link: "https://github.com/codylarge/FarmSense",
+    },
+    {
+      // Denoiser3000
+      src: "../img/cs/denoiser.webp",
+      alt: "Denoiser 3000",
+      title: "Denoiser3000",
+      link: "https://github.com/codylarge/Denoiser3000",
     },
     {
       src: null,
