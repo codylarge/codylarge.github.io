@@ -16,11 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
       link: "https://example.com/magnemite",
     },
     {
-      // Larry
-      src: "../img/art/larry.webp",
-      alt: "Larry The Cucumber",
-      title: "Larry The Pirate",
-      link: "https://example.com/larry",
+      // Toxic Waste
+      src: "../img/art/toxic-waste.png",
+      alt: "Toxic Waste Candy",
+      title: "Toxic Waste",
+      link: "https://example.com/toxic-waste",
     },
     {
       // Pirates
